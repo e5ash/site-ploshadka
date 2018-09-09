@@ -1,11 +1,84 @@
 /* Including styles files */
-/* Including fonts */
 @import url(../../libs/fancybox/dist/jquery.fancybox.css);
+@import url(../../libs/slick-carousel/slick/slick.css);
+.icon-facebook-black {
+  background-image: url(../../img/sprite.png);
+  background-position: -9px -40px;
+  width: 9px;
+  height: 19px; }
+
+.icon-facebook-yellow {
+  background-image: url(../../img/sprite.png);
+  background-position: 0px -40px;
+  width: 9px;
+  height: 19px; }
+
+.icon-instagram-black {
+  background-image: url(../../img/sprite.png);
+  background-position: -36px 0px;
+  width: 18px;
+  height: 18px; }
+
+.icon-instagram-yellow {
+  background-image: url(../../img/sprite.png);
+  background-position: 0px -22px;
+  width: 18px;
+  height: 18px; }
+
+.icon-telegram-black {
+  background-image: url(../../img/sprite.png);
+  background-position: -54px 0px;
+  width: 16px;
+  height: 16px; }
+
+.icon-telegram-yellow {
+  background-image: url(../../img/sprite.png);
+  background-position: -54px -16px;
+  width: 16px;
+  height: 16px; }
+
+.icon-vk-black {
+  background-image: url(../../img/sprite.png);
+  background-position: -35px -40px;
+  width: 17px;
+  height: 9px; }
+
+.icon-vk-yellow {
+  background-image: url(../../img/sprite.png);
+  background-position: -18px -40px;
+  width: 17px;
+  height: 9px; }
+
+.icon-whatsapp-black {
+  background-image: url(../../img/sprite.png);
+  background-position: -18px -22px;
+  width: 17px;
+  height: 17px; }
+
+.icon-whatsapp-yellow {
+  background-image: url(../../img/sprite.png);
+  background-position: -35px -22px;
+  width: 17px;
+  height: 17px; }
+
+.icon-youtube-black {
+  background-image: url(../../img/sprite.png);
+  background-position: -18px 0px;
+  width: 18px;
+  height: 22px; }
+
+.icon-youtube-yellow {
+  background-image: url(../../img/sprite.png);
+  background-position: 0px 0px;
+  width: 18px;
+  height: 22px; }
+
+/* Including fonts */
 @font-face {
-  font-family: "";
-  src: url("../../fonts/");
-  font-style: normal;
-  font-weight: 400; }
+  font-family: 'HiMelodyCyrillic';
+  src: url("../../fonts/HiMelodyCyrillic.eot?#iefix") format("embedded-opentype"), url("../../fonts/HiMelodyCyrillic.woff") format("woff"), url("../../fonts/HiMelodyCyrillic.ttf") format("truetype"), url("../../fonts/HiMelodyCyrillic.svg#HiMelodyCyrillic") format("svg");
+  font-weight: normal;
+  font-style: normal; }
 
 /* Grid */
 .case {
@@ -124,7 +197,7 @@
 
 body {
   font-size: 16px;
-  font-family: "Tahoma", sans-serif;
+  font-family: "HiMelodyCyrillic", sans-serif;
   color: #000;
   background: white; }
 
@@ -171,7 +244,7 @@ input, textarea, button {
   .input__wrap {
     display: block;
     font-size: 16px;
-    font-family: "Tahoma", sans-serif;
+    font-family: "HiMelodyCyrillic", sans-serif;
     background: white;
     width: 100%; }
 
@@ -180,7 +253,7 @@ input, textarea, button {
   .textarea__wrap {
     display: block;
     font-size: 16px;
-    font-family: "Tahoma", sans-serif;
+    font-family: "HiMelodyCyrillic", sans-serif;
     background: white;
     width: 100%;
     resize: none; }
@@ -189,7 +262,7 @@ input, textarea, button {
   position: relative;
   display: inline-block;
   font-size: 0;
-  font-family: "Tahoma", sans-serif;
+  font-family: "HiMelodyCyrillic", sans-serif;
   cursor: pointer;
   text-align: center;
   -webkit-transition: .3s;
