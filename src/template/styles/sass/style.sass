@@ -7,7 +7,7 @@
 
 
 /* Global settings */
-$font-size: 16px
+$font-size: 28px
 $font-family-1: 'HiMelodyCyrillic', sans-serif
 $color-1: #000
 
@@ -77,12 +77,39 @@ input, textarea, button
 
 .btn
 	position: relative
-	display: inline-block
-	font-size: 0
+	display: flex
+	justify-content: center
+	align-items: center
+	padding: 0 5px
+	font-size: $font-size
 	font-family: $font-family-1
 	cursor: pointer
 	text-align: center
 	transition: .3s
+	border-radius: 6px
+	color: #fff
+	&_red
+		background-color: #ff5454
+	
+	&_yellow
+		background-color: #f6c61a
+
+	&_green
+		background-color: #46b325
+
+	&_small
+		height: 38px
+	
+	&_normal
+		height: 58px
+
+	&_radius
+		border-right: 50px
+
+	&_shadow
+		box-shadow: 0 0 7px rgba(0, 0, 0, 0.14)
+
+
 
 .input input, .textarea textarea
 	transition: .3s
@@ -109,6 +136,9 @@ input, .btn, .slick-slide, textarea
 .main-wrap
 	// overflow-x: hidden
 
+
+.header
+	background: url('../../img/bg/header.png') no-repeat center bottom
 
 
 
