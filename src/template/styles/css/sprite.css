@@ -58,6 +58,12 @@
   width: 18px;
   height: 18px; }
 
+.icon-key {
+  background-image: url(../../img/sprite.png);
+  background-position: -138px -148px;
+  width: 15px;
+  height: 15px; }
+
 .icon-telegram-black {
   background-image: url(../../img/sprite.png);
   background-position: -106px -148px;
@@ -72,13 +78,13 @@
 
 .icon-vk-black {
   background-image: url(../../img/sprite.png);
-  background-position: -138px -148px;
+  background-position: 0px -170px;
   width: 17px;
   height: 9px; }
 
 .icon-vk-yellow {
   background-image: url(../../img/sprite.png);
-  background-position: -155px -148px;
+  background-position: -153px -148px;
   width: 17px;
   height: 9px; }
 

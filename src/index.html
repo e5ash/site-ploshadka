@@ -23,10 +23,15 @@
 <body>
 <div class="main-wrap">
 	<header class="header" id="main-slide">
-		<a href="" class="header__btn-form btn btn_red btn_radius btn_small mid">Запись на кастинг</a>
+		<div class="header__top header__top_hidden-lk">
+			<div class="case">
+				<a href="form.html" class="header__btn-form btn btn_red btn_radius btn_small btn_hover-white mid">Запись на кастинг</a>
+				<a href="#" class="header__btn-lk hidden"><i class="icon icon-key"></i><span>Личный кабинет</span></a>
+			</div>
+		</div>
 		<div class="panel">
 			<div class="case row i-mid">
-				<div class="panel__logo"><a href="#main-slide"><img src="upload/logo.png" alt=""></a></div>
+				<div class="panel__logo"><a href="#main-slide"><img src="upload/logo.png" alt="школа креатива Площадка" title="школашкола креатива Площадка"></a></div>
 				<nav class="panel__nav nav">
 					<ul>
 						<li><a href="#about">О нас</a></li>
@@ -49,9 +54,10 @@
 						</ul>
 					</div>
 				</div>
+				<div class="panel__mobile-btn mobile-btn hidden"><span></span><span></span><span></span></div>
 			</div>
 		</div>
-		<div class="case">
+		<div class="header__case case">
 			<div class="header__wrap">
 				<div class="header__name"><h2>Школа креатива</h2><img src="upload/text/desc.png" alt=""></div>
 				<div class="header__title"><h1>Площадка</h1><img src="upload/text/title.png" alt=""></div>
@@ -208,7 +214,7 @@
 			<div class="case">
 				<div class="corner__pride pride" id="pride">
 					<div class="pride__title title"><h3>Ими гордится школа:</h3></div>
-					<div class="pride__list row between">
+					<div class="pride__list row between arrow arrow_black">
 						<div class="pride__item">
 							<div class="pride__img"><img src="upload/pride/1.png" alt=""></div>
 							<div class="pride__name">Марк Твен</div>
@@ -253,7 +259,7 @@
 							<p><strong>Стоимость обучения 20 000 руб/мес.</strong><br> При единоразовой оплате обучения за весь учебный год (ноябрь-май) - предоставляется <span class="color-red">скидка 30%</span></p>
 							<p>Для того, чтобы поступить в школу креатива Площадка, перед заключением договора необходимо пройти кастинг.</p>
 						</div>
-						<a href="" class="edu__btn btn btn_red btn_normal btn_shadow">Записаться на кастинг</a>
+						<a href="form.html" class="edu__btn btn btn_red btn_normal btn_shadow btn_hover-white">Записаться на кастинг</a>
 					</div>
 				</div>
 			</div>
@@ -269,7 +275,7 @@
 								<div class="shares__desc" data-count-show="2">Еще чуть-чуть!</div>
 							</div>
 							<div class="shares__count"></div>
-							<div class="shares__btn btn btn_green btn_normal btn_shadow">Отжать скидку</div>
+							<div class="shares__btn btn btn_green btn_normal btn_shadow btn_hover-white">Отжать скидку</div>
 						</div>
 						<div class="shares__body">
 							<div class="shares__text">Нажми на кнопку 500 раз и получи 100 рублей скидки на обучение</div>
@@ -282,7 +288,7 @@
 								<div class="shares__desc" data-count-show="4">Ну привет</div>
 							</div>
 							<div class="shares__count"></div>
-							<div class="shares__btn btn btn_yellow btn_normal btn_shadow">Отжать скидку</div>
+							<div class="shares__btn btn btn_yellow btn_normal btn_shadow btn_hover-white">Отжать скидку</div>
 						</div>
 						<div class="shares__body">
 							<div class="shares__text">Нажми на кнопку 2500 раз и получи 500 рублей скидки на обучение</div>
@@ -296,7 +302,7 @@
 								<div class="shares__desc" data-count-show="2">Еще чуть-чуть!</div>
 							</div>
 							<div class="shares__count"></div>
-							<div class="shares__btn btn btn_red btn_normal btn_shadow">Отжать скидку</div>
+							<div class="shares__btn btn btn_red btn_normal btn_shadow btn_hover-white">Отжать скидку</div>
 						</div>
 						<div class="shares__body">
 							<div class="shares__text">Нажми на кнопку 10000 раз и получи 2000 рублей скидки на обучение</div>
@@ -320,7 +326,7 @@
 				<div class="casting__wrap row">
 					<div class="casting__content">
 						<div class="casting__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu diam. Pellentesque</div>
-						<a href="" class="casting__btn btn btn_red btn_normal">Записаться на кастинг </a>
+						<a href="form.html" class="casting__btn btn btn_red btn_normal btn_shadow btn_hover-green">Записаться на кастинг </a>
 					</div>
 					<div class="casting__img"><img src="upload/kids-casting.png" alt=""></div>
 				</div>
@@ -345,6 +351,7 @@
 								<div class="table__group-name">Группа 1</div>
 								<div class="table__group-list">
 									<div class="table__item">
+										<div class="table__item-img" style="background-image: url('upload/pride/1.png');"></div>
 										<div class="table__item-name">Пн</div>
 										<div class="table__item-text">
 											<p>19:00</p>
@@ -352,6 +359,7 @@
 										</div>
 									</div>
 									<div class="table__item">
+										<div class="table__item-img" style="background-image: url('upload/pride/1.png');"></div>
 										<div class="table__item-name">Вт</div>
 										<div class="table__item-text">
 											<p>19:00</p>
@@ -359,6 +367,7 @@
 										</div>
 									</div>
 									<div class="table__item">
+										<div class="table__item-img" style="background-image: url('upload/pride/1.png');"></div>
 										<div class="table__item-name">Ср</div>
 										<div class="table__item-text">
 											<p>19:00</p>
@@ -366,6 +375,7 @@
 										</div>
 									</div>
 									<div class="table__item">
+										<div class="table__item-img" style="background-image: url('upload/pride/1.png');"></div>
 										<div class="table__item-name">Чт</div>
 										<div class="table__item-text">
 											<p>19:00</p>
@@ -373,6 +383,7 @@
 										</div>
 									</div>
 									<div class="table__item">
+										<div class="table__item-img" style="background-image: url('upload/pride/1.png');"></div>
 										<div class="table__item-name">Пт</div>
 										<div class="table__item-text">
 											<p>19:00</p>
@@ -380,6 +391,7 @@
 										</div>
 									</div>
 									<div class="table__item">
+										<div class="table__item-img" style="background-image: url('upload/pride/1.png');"></div>
 										<div class="table__item-name">Сб</div>
 										<div class="table__item-text">
 											<p>19:00</p>
@@ -387,6 +399,7 @@
 										</div>
 									</div>
 									<div class="table__item">
+										<div class="table__item-img" style="background-image: url('upload/pride/1.png');"></div>
 										<div class="table__item-name">Вс</div>
 										<div class="table__item-text">
 											<p>19:00</p>
@@ -397,9 +410,10 @@
 							</div>
 
 							<div class="table__group">
-								<div class="table__group-name">Группа 1</div>
+								<div class="table__group-name">Группа 2</div>
 								<div class="table__group-list">
 									<div class="table__item">
+										<div class="table__item-img" style="background-image: url('upload/pride/2.png');"></div>
 										<div class="table__item-name">Пн</div>
 										<div class="table__item-text">
 											<p>19:00</p>
@@ -407,6 +421,7 @@
 										</div>
 									</div>
 									<div class="table__item">
+										<div class="table__item-img" style="background-image: url('upload/pride/2.png');"></div>
 										<div class="table__item-name">Вт</div>
 										<div class="table__item-text">
 											<p>19:00</p>
@@ -414,6 +429,7 @@
 										</div>
 									</div>
 									<div class="table__item">
+										<div class="table__item-img" style="background-image: url('upload/pride/2.png');"></div>
 										<div class="table__item-name">Ср</div>
 										<div class="table__item-text">
 											<p>19:00</p>
@@ -421,6 +437,7 @@
 										</div>
 									</div>
 									<div class="table__item">
+										<div class="table__item-img" style="background-image: url('upload/pride/2.png');"></div>
 										<div class="table__item-name">Чт</div>
 										<div class="table__item-text">
 											<p>19:00</p>
@@ -428,6 +445,7 @@
 										</div>
 									</div>
 									<div class="table__item">
+										<div class="table__item-img" style="background-image: url('upload/pride/2.png');"></div>
 										<div class="table__item-name">Пт</div>
 										<div class="table__item-text">
 											<p>19:00</p>
@@ -435,6 +453,7 @@
 										</div>
 									</div>
 									<div class="table__item">
+										<div class="table__item-img" style="background-image: url('upload/pride/2.png');"></div>
 										<div class="table__item-name">Сб</div>
 										<div class="table__item-text">
 											<p>19:00</p>
@@ -442,6 +461,7 @@
 										</div>
 									</div>
 									<div class="table__item">
+										<div class="table__item-img" style="background-image: url('upload/pride/2.png');"></div>
 										<div class="table__item-name">Вс</div>
 										<div class="table__item-text">
 											<p>19:00</p>
@@ -452,9 +472,10 @@
 							</div>
 
 							<div class="table__group">
-								<div class="table__group-name">Группа 1</div>
+								<div class="table__group-name">Группа 3</div>
 								<div class="table__group-list">
 									<div class="table__item">
+										<div class="table__item-img" style="background-image: url('upload/pride/3.png');"></div>
 										<div class="table__item-name">Пн</div>
 										<div class="table__item-text">
 											<p>19:00</p>
@@ -462,6 +483,7 @@
 										</div>
 									</div>
 									<div class="table__item">
+										<div class="table__item-img" style="background-image: url('upload/pride/3.png');"></div>
 										<div class="table__item-name">Вт</div>
 										<div class="table__item-text">
 											<p>19:00</p>
@@ -469,6 +491,7 @@
 										</div>
 									</div>
 									<div class="table__item">
+										<div class="table__item-img" style="background-image: url('upload/pride/3.png');"></div>
 										<div class="table__item-name">Ср</div>
 										<div class="table__item-text">
 											<p>19:00</p>
@@ -476,6 +499,7 @@
 										</div>
 									</div>
 									<div class="table__item">
+										<div class="table__item-img" style="background-image: url('upload/pride/3.png');"></div>
 										<div class="table__item-name">Чт</div>
 										<div class="table__item-text">
 											<p>19:00</p>
@@ -483,6 +507,7 @@
 										</div>
 									</div>
 									<div class="table__item">
+										<div class="table__item-img" style="background-image: url('upload/pride/3.png');"></div>
 										<div class="table__item-name">Пт</div>
 										<div class="table__item-text">
 											<p>19:00</p>
@@ -490,6 +515,7 @@
 										</div>
 									</div>
 									<div class="table__item">
+										<div class="table__item-img" style="background-image: url('upload/pride/3.png');"></div>
 										<div class="table__item-name">Сб</div>
 										<div class="table__item-text">
 											<p>19:00</p>
@@ -497,6 +523,7 @@
 										</div>
 									</div>
 									<div class="table__item">
+										<div class="table__item-img" style="background-image: url('upload/pride/3.png');"></div>
 										<div class="table__item-name">Вс</div>
 										<div class="table__item-text">
 											<p>19:00</p>
@@ -507,9 +534,10 @@
 							</div>
 
 							<div class="table__group">
-								<div class="table__group-name">Группа 1</div>
+								<div class="table__group-name">Группа 4</div>
 								<div class="table__group-list">
 									<div class="table__item">
+										<div class="table__item-img" style="background-image: url('upload/pride/1.png');"></div>
 										<div class="table__item-name">Пн</div>
 										<div class="table__item-text">
 											<p>19:00</p>
@@ -517,6 +545,7 @@
 										</div>
 									</div>
 									<div class="table__item">
+										<div class="table__item-img" style="background-image: url('upload/pride/1.png');"></div>
 										<div class="table__item-name">Вт</div>
 										<div class="table__item-text">
 											<p>19:00</p>
@@ -524,6 +553,7 @@
 										</div>
 									</div>
 									<div class="table__item">
+										<div class="table__item-img" style="background-image: url('upload/pride/1.png');"></div>
 										<div class="table__item-name">Ср</div>
 										<div class="table__item-text">
 											<p>19:00</p>
@@ -531,6 +561,7 @@
 										</div>
 									</div>
 									<div class="table__item">
+										<div class="table__item-img" style="background-image: url('upload/pride/1.png');"></div>
 										<div class="table__item-name">Чт</div>
 										<div class="table__item-text">
 											<p>19:00</p>
@@ -538,6 +569,7 @@
 										</div>
 									</div>
 									<div class="table__item">
+										<div class="table__item-img" style="background-image: url('upload/pride/1.png');"></div>
 										<div class="table__item-name">Пт</div>
 										<div class="table__item-text">
 											<p>19:00</p>
@@ -545,6 +577,7 @@
 										</div>
 									</div>
 									<div class="table__item">
+										<div class="table__item-img" style="background-image: url('upload/pride/1.png');"></div>
 										<div class="table__item-name">Сб</div>
 										<div class="table__item-text">
 											<p>19:00</p>
@@ -552,6 +585,268 @@
 										</div>
 									</div>
 									<div class="table__item">
+										<div class="table__item-img" style="background-image: url('upload/pride/1.png');"></div>
+										<div class="table__item-name">Вс</div>
+										<div class="table__item-text">
+											<p>19:00</p>
+											<p>Деградация 80lvl</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="schedule__table table table_no-animate">
+						<div class="table__days">
+							<div class="table__day">Понедельник</div>
+							<div class="table__day">Вторник</div>
+							<div class="table__day">Среда</div>
+							<div class="table__day">Четверг</div>
+							<div class="table__day">Пятница</div>
+							<div class="table__day">Суббота</div>
+							<div class="table__day">Воскресенье</div>
+						</div>
+						<div class="table__list">
+							<div class="table__group">
+								<div class="table__group-name">Группа 1</div>
+								<div class="table__group-list">
+									<div class="table__item">
+										<div class="table__item-img" style="background-image: url('upload/pride/1.png');"></div>
+										<div class="table__item-name">Пн</div>
+										<div class="table__item-text">
+											<p>19:00</p>
+											<p>Чаепитие с В.В. Путиным</p>
+										</div>
+									</div>
+									<div class="table__item">
+										<div class="table__item-img" style="background-image: url('upload/pride/1.png');"></div>
+										<div class="table__item-name">Вт</div>
+										<div class="table__item-text">
+											<p>19:00</p>
+											<p>Чаепитие с В.В. Путиным</p>
+										</div>
+									</div>
+									<div class="table__item">
+										<div class="table__item-img" style="background-image: url('upload/pride/1.png');"></div>
+										<div class="table__item-name">Ср</div>
+										<div class="table__item-text">
+											<p>19:00</p>
+											<p>Чаепитие с В.В. Путиным</p>
+										</div>
+									</div>
+									<div class="table__item">
+										<div class="table__item-img" style="background-image: url('upload/pride/1.png');"></div>
+										<div class="table__item-name">Чт</div>
+										<div class="table__item-text">
+											<p>19:00</p>
+											<p>Чаепитие с В.В. Путиным</p>
+										</div>
+									</div>
+									<div class="table__item">
+										<div class="table__item-img" style="background-image: url('upload/pride/1.png');"></div>
+										<div class="table__item-name">Пт</div>
+										<div class="table__item-text">
+											<p>19:00</p>
+											<p>Чаепитие с В.В. Путиным</p>
+										</div>
+									</div>
+									<div class="table__item">
+										<div class="table__item-img" style="background-image: url('upload/pride/1.png');"></div>
+										<div class="table__item-name">Сб</div>
+										<div class="table__item-text">
+											<p>19:00</p>
+											<p>Чаепитие с В.В. Путиным</p>
+										</div>
+									</div>
+									<div class="table__item">
+										<div class="table__item-img" style="background-image: url('upload/pride/1.png');"></div>
+										<div class="table__item-name">Вс</div>
+										<div class="table__item-text">
+											<p>19:00</p>
+											<p>Чаепитие с В.В. Путиным</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="table__group">
+								<div class="table__group-name">Группа 2</div>
+								<div class="table__group-list">
+									<div class="table__item">
+										<div class="table__item-img" style="background-image: url('upload/pride/1.png');"></div>
+										<div class="table__item-name">Пн</div>
+										<div class="table__item-text">
+											<p>19:00</p>
+											<p>Вызываем дух Стива Джобса</p>
+										</div>
+									</div>
+									<div class="table__item">
+										<div class="table__item-img" style="background-image: url('upload/pride/1.png');"></div>
+										<div class="table__item-name">Вт</div>
+										<div class="table__item-text">
+											<p>19:00</p>
+											<p>Вызываем дух Стива Джобса</p>
+										</div>
+									</div>
+									<div class="table__item">
+										<div class="table__item-img" style="background-image: url('upload/pride/1.png');"></div>
+										<div class="table__item-name">Ср</div>
+										<div class="table__item-text">
+											<p>19:00</p>
+											<p>Вызываем дух Стива Джобса</p>
+										</div>
+									</div>
+									<div class="table__item">
+										<div class="table__item-img" style="background-image: url('upload/pride/1.png');"></div>
+										<div class="table__item-name">Чт</div>
+										<div class="table__item-text">
+											<p>19:00</p>
+											<p>Вызываем дух Стива Джобса</p>
+										</div>
+									</div>
+									<div class="table__item">
+										<div class="table__item-img" style="background-image: url('upload/pride/1.png');"></div>
+										<div class="table__item-name">Пт</div>
+										<div class="table__item-text">
+											<p>19:00</p>
+											<p>Вызываем дух Стива Джобса</p>
+										</div>
+									</div>
+									<div class="table__item">
+										<div class="table__item-img" style="background-image: url('upload/pride/1.png');"></div>
+										<div class="table__item-name">Сб</div>
+										<div class="table__item-text">
+											<p>19:00</p>
+											<p>Вызываем дух Стива Джобса</p>
+										</div>
+									</div>
+									<div class="table__item">
+										<div class="table__item-img" style="background-image: url('upload/pride/1.png');"></div>
+										<div class="table__item-name">Вс</div>
+										<div class="table__item-text">
+											<p>19:00</p>
+											<p>Вызываем дух Стива Джобса</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="table__group">
+								<div class="table__group-name">Группа 3</div>
+								<div class="table__group-list">
+									<div class="table__item">
+										<div class="table__item-img" style="background-image: url('upload/pride/1.png');"></div>
+										<div class="table__item-name">Пн</div>
+										<div class="table__item-text">
+											<p>19:00</p>
+											<p>Основы монтажа от С. Спилберга</p>
+										</div>
+									</div>
+									<div class="table__item">
+										<div class="table__item-img" style="background-image: url('upload/pride/1.png');"></div>
+										<div class="table__item-name">Вт</div>
+										<div class="table__item-text">
+											<p>19:00</p>
+											<p>Основы монтажа от С. Спилберга</p>
+										</div>
+									</div>
+									<div class="table__item">
+										<div class="table__item-img" style="background-image: url('upload/pride/1.png');"></div>
+										<div class="table__item-name">Ср</div>
+										<div class="table__item-text">
+											<p>19:00</p>
+											<p>Основы монтажа от С. Спилберга</p>
+										</div>
+									</div>
+									<div class="table__item">
+										<div class="table__item-img" style="background-image: url('upload/pride/1.png');"></div>
+										<div class="table__item-name">Чт</div>
+										<div class="table__item-text">
+											<p>19:00</p>
+											<p>Основы монтажа от С. Спилберга</p>
+										</div>
+									</div>
+									<div class="table__item">
+										<div class="table__item-img" style="background-image: url('upload/pride/1.png');"></div>
+										<div class="table__item-name">Пт</div>
+										<div class="table__item-text">
+											<p>19:00</p>
+											<p>Основы монтажа от С. Спилберга</p>
+										</div>
+									</div>
+									<div class="table__item">
+										<div class="table__item-img" style="background-image: url('upload/pride/1.png');"></div>
+										<div class="table__item-name">Сб</div>
+										<div class="table__item-text">
+											<p>19:00</p>
+											<p>Основы монтажа от С. Спилберга</p>
+										</div>
+									</div>
+									<div class="table__item">
+										<div class="table__item-img" style="background-image: url('upload/pride/1.png');"></div>
+										<div class="table__item-name">Вс</div>
+										<div class="table__item-text">
+											<p>19:00</p>
+											<p>Основы монтажа от С. Спилберга</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="table__group">
+								<div class="table__group-name">Группа 4</div>
+								<div class="table__group-list">
+									<div class="table__item">
+										<div class="table__item-img" style="background-image: url('upload/pride/1.png');"></div>
+										<div class="table__item-name">Пн</div>
+										<div class="table__item-text">
+											<p>19:00</p>
+											<p>Деградация 80lvl</p>
+										</div>
+									</div>
+									<div class="table__item">
+										<div class="table__item-img" style="background-image: url('upload/pride/1.png');"></div>
+										<div class="table__item-name">Вт</div>
+										<div class="table__item-text">
+											<p>19:00</p>
+											<p>Деградация 80lvl</p>
+										</div>
+									</div>
+									<div class="table__item">
+										<div class="table__item-img" style="background-image: url('upload/pride/1.png');"></div>
+										<div class="table__item-name">Ср</div>
+										<div class="table__item-text">
+											<p>19:00</p>
+											<p>Деградация 80lvl</p>
+										</div>
+									</div>
+									<div class="table__item">
+										<div class="table__item-img" style="background-image: url('upload/pride/1.png');"></div>
+										<div class="table__item-name">Чт</div>
+										<div class="table__item-text">
+											<p>19:00</p>
+											<p>Деградация 80lvl</p>
+										</div>
+									</div>
+									<div class="table__item">
+										<div class="table__item-img" style="background-image: url('upload/pride/1.png');"></div>
+										<div class="table__item-name">Пт</div>
+										<div class="table__item-text">
+											<p>19:00</p>
+											<p>Деградация 80lvl</p>
+										</div>
+									</div>
+									<div class="table__item">
+										<div class="table__item-img" style="background-image: url('upload/pride/1.png');"></div>
+										<div class="table__item-name">Сб</div>
+										<div class="table__item-text">
+											<p>19:00</p>
+											<p>Деградация 80lvl</p>
+										</div>
+									</div>
+									<div class="table__item">
+										<div class="table__item-img" style="background-image: url('upload/pride/1.png');"></div>
 										<div class="table__item-name">Вс</div>
 										<div class="table__item-text">
 											<p>19:00</p>
@@ -563,21 +858,21 @@
 						</div>
 					</div>
 				</div>
-				<div class="schedule__link"><span>Посмотреть настоящее расписание</span></div>
+				<div class="schedule__link"><span><b>Посмотреть настоящее расписание</b><u>Посмотреть скучной расписание</u></span></div>
 			</div>
 		</div>
 		<div class="about" id="about">
 			<div class="case">
 				<div class="about__title title"><h3>Что такое Площадка</h3></div>
 				<div class="about__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu diam. Pellentesque rhoncus aliquam mattis. Ut vulputate eros sed felis sodales nec vulputate justo hendrerit. Vivamus varius pretium ligula, a aliquam odio euismod sit amet. Quisque laoreet sem sit amet orci ullamcorper at ultricies metus viverra. </div>
-				<div class="about__images row">
+				<div class="about__images row arrow arrow_black">
 					<div class="about__images-item"><img src="upload/office/1.png" alt=""></div>
 					<div class="about__images-item"><img src="upload/office/2.png" alt=""></div>
 					<div class="about__images-item"><img src="upload/office/3.png" alt=""></div>
 				</div>
 			</div>
 			<div class="insta" id="insta">
-				<div class="insta__title title"><h3>Наш инстаграм @plschdkaplschdka</h3></div>
+				<div class="insta__title title"><h3>Наш инстаграм @plschdka</h3></div>
 				<div class="insta__list row">
 					<div class="insta__item" style="background-image: url('upload/instagram/1.png');"></div>
 					<div class="insta__item" style="background-image: url('upload/instagram/2.png');"></div>
@@ -615,6 +910,15 @@
 			</div>
 			<div class="contacts__map">
 				<div class="map" id="map"></div>
+				<script>
+					function initMap() {
+					  var uluru = {lat: 55.682809, lng: 37.6501304};
+					  var map = new google.maps.Map(
+					      document.getElementById('map'), {zoom: 15, center: {lat: 55.682809, lng: 37.6575}, disableDefaultUI: true});
+					  var marker = new google.maps.Marker({position: uluru, map: map});
+					}
+   			 </script>
+				<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAfEFyS5xoi-MBgcRXgqXMSDSwCppIb7HY&callback=initMap"></script>
 			</div>
 		</div>
 	</main>

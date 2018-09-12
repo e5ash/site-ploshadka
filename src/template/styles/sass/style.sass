@@ -67,6 +67,16 @@ input, textarea, button
 		font-family: $font-family-1
 		background: white
 		width: 100%
+		height: 46px
+		box-shadow: 4px 4px 16px rgba(20, 20, 21, 0.08), inset 1px 1px 11px 1px rgba(0, 0, 0, 0.11)
+		border: 1px solid #d09810
+		background-color: #ffffff
+		border-radius: 6px
+		padding: 0 15px
+		&::placeholder
+			opacity: 1
+			color: #9b9b9b
+
 
 
 .textarea
@@ -78,6 +88,15 @@ input, textarea, button
 		background: white
 		width: 100%
 		resize: none
+		height: 140px
+		box-shadow: 4px 4px 16px rgba(20, 20, 21, 0.08), inset 1px 1px 11px 1px rgba(0, 0, 0, 0.11)
+		border: 1px solid #d09810
+		background-color: #ffffff
+		border-radius: 6px
+		padding: 15px
+		&::placeholder
+			opacity: 1
+			color: #9b9b9b
 
 .btn
 	position: relative
@@ -100,12 +119,34 @@ input, textarea, button
 
 	&_green
 		background-color: #46b325
+	
+	&_hover
+		&-red
+			&:hover
+				background-color: #ff5454
+			
+		&-yellow
+			&:hover
+				background-color: #f6c61a
+
+		&-green
+			&:hover
+				background-color: #46b325
+
+		&-white
+			&:hover
+				color: $color-1
+				background-color: #fff
+
 
 	&_small
 		height: 38px
 	
 	&_normal
 		height: 58px
+
+	&_big
+		font-size: 35px
 
 	&_radius
 		border-radius: 50px
@@ -138,7 +179,10 @@ input, .btn, .slick-slide, textarea
 
 
 .main-wrap
-	// overflow-x: hidden
+	overflow-x: hidden
+	max-width: 1920px
+	margin-left: auto
+	margin-right: auto
 
 
 .header
@@ -148,11 +192,47 @@ input, .btn, .slick-slide, textarea
 	color: #fff
 	background: url('../../img/bg/header.png') no-repeat center bottom
 	min-height: 1027px
+	&_small
+		background: #3695de
+		background-position: center -700px
+		min-height: 178px
+		.header
+			&__case
+				display: none
+			&__top
+				margin-bottom: 0
+
+	&_info
+		padding-top: 82px
+		.header
+			&__top
+				display: none
+
+			&__title
+				margin-bottom: 65px
+
+			&__subtitle
+				margin-bottom: 10px
+				
+				
+			&__desc
+				font-size: 35px
+				
+
+		.panel
+			display: none
+				
+				
+				
 	.case
 		position: static
-	&__btn-form
-		width: 270px
+	&__top
 		margin-bottom: 165px
+		.case
+			position: relative
+		
+	&__btn-form
+		width: 270px		
 		
 	&__title
 		h1
@@ -175,6 +255,14 @@ input, .btn, .slick-slide, textarea
 			margin-left: auto
 			margin-right: auto
 
+	&__subtitle
+		font-size: 83px
+		line-height: 50px
+		color: #fbd62f
+		text-align: center
+
+		
+
 	&__desc
 		text-align: center
 		font-size: 47px
@@ -188,6 +276,24 @@ input, .btn, .slick-slide, textarea
 		transform: translateX(-50%)
 		width: 1370px
 		margin-left: 30px
+		
+	&__btn-lk
+		display: flex
+		align-items: center
+		position: absolute
+		right: 0
+		top: 7px
+		line-height: 23px
+		span
+			display: inline-block
+			color: #fdd832
+			border-bottom: 1px solid #fdd832
+			margin-left: 7px
+			transition: .3s
+		&:hover
+			span
+				border-color: transparent
+
 		
 		
 		
@@ -228,7 +334,7 @@ input, .btn, .slick-slide, textarea
 
 		a
 			&:hover
-				color: #ff5454
+				color: #fff
 
 	&__phone
 		text-align: right
@@ -796,10 +902,15 @@ input, .btn, .slick-slide, textarea
 	padding-top: 48px
 	background: url('../../img/bg/bg-2.png') no-repeat center top
 	overflow: hidden
+	&__title
+		position: relative
+		z-index: 1
+		
 	&__wrap
 		margin-top: -18px
 
 	&__img
+		z-index: 0
 		position: relative
 		margin-left: -267px
 		img
@@ -920,6 +1031,7 @@ input, .btn, .slick-slide, textarea
 		transform: translateX(-50%)
 		visibility: hidden
 		transition: .3s
+		box-shadow: 0 0 7px rgba(0, 0, 0, 0.14)
 		&_show
 			opacity: 1
 			visibility: visible
@@ -932,10 +1044,400 @@ input, .btn, .slick-slide, textarea
 		
 	
 
+.gift
+	padding-top: 55px
+	background: url('../../img/bg/yellow-bg-2.png') no-repeat center top
+	&__title
+		font-size: 60px
+	&__img
+		width: 1451px
+		margin-left: -390px
+		margin-right: -350px
+		margin-top: -140px
+	&__text
+		width: 435px
+		padding-top: 200px
+		margin-top: -120px
+		
+
+
+.casting
+	padding-top: 76px
+	padding-bottom: 30px
+	&__title
+		margin-bottom: 20px
+
+	&__wrap
+		
+
+	&__text
+		width: 435px
+		padding-top: 80px
+
+	&__img
+		width: 1106px
+		margin-right: -500px
+		
+	&__text
+		margin-bottom: 25px
+
+	&__btn
+		width: 270px
+		
+
+
+.schedule
+	padding-top: 60px
+	padding-bottom: 72px
+	background: url('../../img/bg/yellow-bg-3.png') no-repeat center top
+	&__title
+		margin-bottom: 55px
+
+	&__tables
+		min-height: 440px
+
+	&__link
+		font-size: 35px
+		text-align: center
+		margin-top: 50px
+		span
+			color: #3695de
+			transition: .3s
+			border-bottom: 1px solid #3695de
+			cursor: pointer
+			&:hover
+				border-color: transparent
+	
+		b
+			font-weight: 400
+			display: none
+	
+		u
+			text-decoration: none
+
+
+.table
+	&_no-animate
+		.table
+			&__item
+				&-img
+					display: none
+				&-text
+					opacity: 1
+					transform: scale(1)
+
+				
+	&__days
+		display: flex
+		align-items: center
+		padding-left: 138px
+		margin-right: -11px
+		margin-bottom: 19px
+		flex-wrap: wrap
+	&__day
+		font-size: 24px
+		background-color: #fff
+
+	&__item
+		font-size: 21px
+		line-height: 20px
+		position: relative
+		overflow: hidden
+		&:hover
+			.table
+				&__item
+					&-img
+						opacity: 0
+						transform: translateY(-100%)
+					&-text
+						opacity: 1
+						transform: scale(1)
+						transition-delay: .2s
+
+					
+		&-name
+			display: none
+
+		&-text
+			opacity: 0
+			transform: scale(0)
+			transition: .3s
+
+		&-img
+			top: 0
+			left: 0
+			right: 0
+			bottom: 0
+			position: absolute
+			background-position: center
+			background-size: cover
+			z-index: 1
+			transition: .6s
+				
+	
+			
+
+	&__day, &__item
+		width: calc(100% / 7 - 22px)
+		margin-left: 11px
+		margin-right: 11px
+		height: 61px
+		display: flex
+		align-items: center
+		justify-content: center
+
+	&__group
+		display: flex
+		flex-wrap: wrap
+		&-name
+			width: 127px
+			height: 77px
+			margin-right: 22px
+			color: #fff
+			display: flex
+			align-items: center
+			justify-content: center
+			background-color: #3695de
+			text-align: center
+		&-list
+			display: flex
+			align-items: center
+			margin-left: -11px
+			margin-right: -11px
+			width: calc(100% - 127px)
+
+	&__item
+		height: 77px
+		border: 1px solid rgba(255,255,255,.3)
+		padding: 0 7px
+		margin-bottom: 13px
+		font-size: 20px
+
+	
+
+.about
+	padding-top: 45px
+	&__title
+		margin-bottom: 25px
+				
+
+	&__text
+		text-align: center
+		margin-bottom: 39px
+
+	&__images
+		margin-left: -14px
+		margin-right: -14px
+		margin-bottom: 85px
+		&-item
+			width: calc(33.333% - 28px)
+			margin-left: 14px
+			margin-right: 14px
+			position: relative
+			z-index: 1
+			img
+				position: relative
+				z-index: 2
+			&:before
+				position: absolute
+				z-index: 1
+				content: ''
+				width: 388px
+				height: 57px
+				background: url('../../img/bg/img-photo.png') no-repeat center 
+				bottom: -42px
+				right: 0
+
+
+.insta
+	&__title
+		margin-bottom: 20px
+		
+	&__item
+		width: calc(100% / 6)
+		height: 225px
+		font-size: 0
+		background-size: cover
+		background-position: center
+		
+
+	
+.contacts
+	color: #fff
+	position: relative
+	a
+		color: #fff
+	&__title
+		padding-left: 15px
+		padding-right: 15px
+		top: 75px
+		position: absolute
+		z-index: 2
+		left: 0
+		right: 0
+		text-align: center
+		
+	&__data
+		z-index: 2
+		position: absolute
+		border-left: 1px solid #fff
+		left: 50%
+		top: 365px
+		padding-left: 30px
+
+	&__socials
+		margin-top: 35px
+		margin-left: -4px
+		
+
+		
+	&__map
+		height: 935px
+		position: relative
+		&:before
+			z-index: 1
+			display: block
+			content: ''
+			position: absolute
+			top: 0
+			left: 0
+			right: 0
+			bottom: 0
+			background: url('../../img/bg/overlay.png') no-repeat center
+
+.map
+	width: 100%
+	height: 100%
+		
+
+		
+		
+.peoples
+	padding-top: 65px
+	padding-bottom: 60px
+	background: url('../../img/bg/wall.png') center
+	&__title
+		margin-bottom: 45px
+		
+	&__list
+		column-count: 3
+
+	&__item
+		display: inline-block
+		vertical-align: top
+		margin-bottom: 35px
+		position: relative
+		.peoples
+			&__img
+				&:hover
+					img
+						transform: rotate3d(1, 0, 0, 180deg)
+
+	&__img
+		background-size: cover
+		position: relative
+		z-index: 1
+		img
+			transition: .6s
+			transform-origin: 50% 0%
+		
+		
+	&__data
+		display: flex
+		flex-wrap: wrap
+		align-items: center
+		padding-top: 23px
+			
+
+	&__name
+		padding-left: 15px
+		padding-right: 5px
+		width: calc(100% - 112px)
+
+	&__socials
+		width: 112px
+
+		
+.whant
+	color: #fff
+	padding-top: 70px
+	padding-bottom: 100px
+	background-color: #3695de
+	&__title
+		font-size: 60px
+		text-align: center
+		margin-bottom: 12px
+
+	&__btn
+		width: 270px
+	
+		
+		
+		
+.subpage
+	background: url('../../img/bg/yellow-bg-4.png') no-repeat center top
+	background-size: auto 1920px
+	margin-top: -310px
+	padding-top: 280px
+	padding-bottom: 100px
+		
+		
+.form
+	position: relative
+	z-index: 10
+	max-width: 570px
+	margin-left: auto
+	margin-right: auto
+	&__input
+		margin-bottom: 10px
+
+	&__textarea
+		margin-bottom: 37px
+
+	&__btn
+		width: 100%
+		
+		
+.thanks
+	padding-top: 80px
+	padding-bottom: 50px
+	text-align: center
+	&__title
+		font-size: 70px
+		line-height: 50px
+		color: #3089d0
+		margin-bottom: 10px
+	&__subtitle
+		font-size: 46px
+		color: #3089d0
+		margin-bottom: 15px
+		
+	&__text
+		font-size: 36px
+		margin-bottom: 40px
+
+	&__link
+		font-size: 32px
+		line-height: 28px
+		a
+			color: #3089d0
+			border-color: #3089d0
+			&:hover
+				border-color: transparent
+
+		
+	
+		
+		
+		
+		
 		
 		
 
 
+
+.hidden
+	display: none
 
 
 .color-
